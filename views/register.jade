@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+
+    form(method='POST' action='/reg/register')
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='Enter your name' name='name')
+            <br />
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='Enter your email' name='email')
+            <br />
+            button(type='submit') Sign up
